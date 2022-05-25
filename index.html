@@ -23,33 +23,60 @@
     <div class=" [max-width:1170px] mx-auto">
         <section class=" mt-10 md:flex ">
             <div class="mb-8 md:mb-0">
-                <img class="[width:90%] mx-auto rounded-xl p-5" src="./download.jpg" alt="">
+                <img class="[max-width:90%;] mx-auto rounded-xl p-5" src="./download.jpg" alt="">
 
             </div>
             <div class="[width:90%] mx-auto">
-                <h2>income</h2>
-                <label for="">Income:</label>
-                <input type="text" name="" id="">
+                <h2 class=" text-3xl text-gray-900 font-extrabold border-b-4 p-2 text-center uppercase">income</h2>
+                <label class="text-center block text-xl font-semibold" for="">Income:</label>
+                <input id="amount" class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text"
+                    placeholder="Enter Your Earn Amount" name="" id="">
 
-                <h2>Expenses</h2>
-                <label for="">Food:</label>
-                <input type="text" name="" id="">
+                <h2 class=" text-3xl text-gray-900 font-extrabold border-b-4 p-2 text-center uppercase">Expenses</h2>
+                <label class="block text-center text-xl font-semibold" for="">Food:</label>
+                <input id="foodamount" placeholder="How will Spand for food"
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
+                <hr class="block mt-5 font-semibold border-2 border-red-100">
 
-                <label for="">Rent:</label>
-                <input type="text" name="" id="">
+                <label class="block text-center text-xl font-semibold" for="">Rent:</label>
+                <input itemid="class" placeholder="How will Spand for rent"
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
 
-                <label for="">Clothes:</label>
-                <input type="text" name="" id="">
+                <hr class="block mt-5 font-semibold border-2 border-red-100">
 
-                <button>Calculate</button>
+                <label class="block text-center text-xl font-semibold" for="">Clothes:</label>
+                <input id="clothamount" placeholder="How will Spand for Clothes"
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
+
+                <button
+                    class=" mt-5 p-2 bg-amber-400 rounded-2xl font-semibold text-lg w-96 border-2 border-red-200 block mx-auto">
+                    Calculate</button>
+
+                <div class=" mx-auto mt-6 p-5 w-96 border-2 border-gray-900">
+                    <h3 class="text-xl font-semibold text-slate-400">Display</h3>
+                    <h2 class=" text-lg">Total Expenses: <span></span></h2>
+                    <h2 class=" text-lg">Balance: <span></span></h2>
+                </div>
+                <hr class="block mt-5 font-semibold border-2 border-red-100">
 
 
-                <label for="">Save:</label>
-                <input type="text" name="" placeholder="How % do you want to save" id="">
-                <button>Save</button>
 
-                <h2>Saving Amount: <span>00</span></h2>
-                <h2>Remaining Balance: <span>00</span></h2>
+
+                <!-- new start from here  -->
+                <label class="block text-center text-xl font-semibold" for="">Save:</label>
+                <input class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name=""
+                    placeholder="How % do you want to save" id="">
+                <h1 class=" text-center font-extrabold text-3xl mt-3">%</h1>
+                <button
+                    class=" mt-5 p-2 bg-amber-400 rounded-2xl font-semibold text-lg w-96 border-2 border-red-200 block mx-auto">Save</button>
+
+
+
+                <div class=" mx-auto mt-6 p-5 w-96 border-2 border-gray-900">
+                    <h3 class="text-xl font-semibold text-slate-400">Display</h3>
+                    <h2 class=" text-lg">Saving Amount: <span>00</span></h2>
+                    <h2 class=" text-lg">Remaining Balance: <span>00</span></h2>
+                </div>
 
             </div>
         </section>
