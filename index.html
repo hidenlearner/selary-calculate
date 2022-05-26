@@ -22,40 +22,43 @@
 
     <div class=" [max-width:1170px] mx-auto">
         <section class=" mt-10 md:flex ">
-            <div class="mb-8 md:mb-0">
-                <img class="[max-width:90%;] mx-auto rounded-xl p-5" src="./download.jpg" alt="">
+            <div class="mb-8 md:mb-0 w-80 mt-6">
+                <img class="block mx-auto w-80 p-5 rounded-lg" src="./money.jpg" alt="">
 
             </div>
-            <div class="[width:90%] mx-auto">
+            <div class="[width:50] mx-auto">
                 <h2 class=" text-3xl text-gray-900 font-extrabold border-b-4 p-2 text-center uppercase">income</h2>
                 <label class="text-center block text-xl font-semibold" for="">Income:</label>
-                <input id="amount" class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text"
-                    placeholder="Enter Your Earn Amount" name="" id="">
+                <input id="amount" class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2"
+                    type="number" placeholder="Enter Your Earn Amount" name="" id="">
 
                 <h2 class=" text-3xl text-gray-900 font-extrabold border-b-4 p-2 text-center uppercase">Expenses</h2>
                 <label class="block text-center text-xl font-semibold" for="">Food:</label>
                 <input id="foodamount" placeholder="How will Spand for food"
-                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="number" name=""
+                    id="">
                 <hr class="block mt-5 font-semibold border-2 border-red-100">
 
                 <label class="block text-center text-xl font-semibold" for="">Rent:</label>
-                <input itemid="class" placeholder="How will Spand for rent"
-                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
+                <input id="rentamount" placeholder="How will Spand for rent"
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="number" name=""
+                    id="">
 
                 <hr class="block mt-5 font-semibold border-2 border-red-100">
 
                 <label class="block text-center text-xl font-semibold" for="">Clothes:</label>
                 <input id="clothamount" placeholder="How will Spand for Clothes"
-                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name="" id="">
+                    class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="number" name=""
+                    id="">
 
-                <button
+                <button id="calculate"
                     class=" mt-5 p-2 bg-amber-400 rounded-2xl font-semibold text-lg w-96 border-2 border-red-200 block mx-auto">
                     Calculate</button>
 
                 <div class=" mx-auto mt-6 p-5 w-96 border-2 border-gray-900">
                     <h3 class="text-xl font-semibold text-slate-400">Display</h3>
-                    <h2 class=" text-lg">Total Expenses: <span></span></h2>
-                    <h2 class=" text-lg">Balance: <span></span></h2>
+                    <h2 class=" text-lg">Total Expenses: <span class="text-3xl" id="totalexpense"></span></h2>
+                    <h2 class=" text-lg">Balance: <span class="text-3xl" id="balance"></span></h2>
                 </div>
                 <hr class="block mt-5 font-semibold border-2 border-red-100">
 
@@ -64,18 +67,18 @@
 
                 <!-- new start from here  -->
                 <label class="block text-center text-xl font-semibold" for="">Save:</label>
-                <input class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="text" name=""
-                    placeholder="How % do you want to save" id="">
+                <input id="save" class="mx-auto border-2 border-amber-600 block w-96 p-2 rounded-md mt-2" type="number"
+                    name="" placeholder="How % do you want to save" id="">
                 <h1 class=" text-center font-extrabold text-3xl mt-3">%</h1>
-                <button
+                <button id="savebtn"
                     class=" mt-5 p-2 bg-amber-400 rounded-2xl font-semibold text-lg w-96 border-2 border-red-200 block mx-auto">Save</button>
 
 
 
                 <div class=" mx-auto mt-6 p-5 w-96 border-2 border-gray-900">
                     <h3 class="text-xl font-semibold text-slate-400">Display</h3>
-                    <h2 class=" text-lg">Saving Amount: <span>00</span></h2>
-                    <h2 class=" text-lg">Remaining Balance: <span>00</span></h2>
+                    <h2 class=" text-lg">Saving Amount: <span class="text-3xl mt-5" id="saveamount"></span></h2>
+                    <h2 class=" text-lg">Remaining Balance: <span class=" text-3xl mt-5" id="allamount"></span> </h2>
                 </div>
 
             </div>
